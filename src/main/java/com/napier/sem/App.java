@@ -244,14 +244,7 @@ public class App {
         App a = new App();
 
         // Connect to database
-        if (args.length < 1)
-        {
-            a.connect("localhost:3306");
-        }
-        else
-        {
-            a.connect(args[0]);
-        }
+        a.connect("localhost:33060");
 
         Department dept = a.getDepartment("Sales");
         ArrayList<Employee> employees = a.getSalariesByDepartment(dept);
